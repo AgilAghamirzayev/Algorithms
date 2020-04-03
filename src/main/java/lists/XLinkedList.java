@@ -50,17 +50,18 @@ public class XLinkedList {
     return false;
   }
 
+
   void reverse() {
     Node curr = head;
     Node rev = null;
     while (curr != null){
-      Node next = curr.next;
-      curr.next = rev;
-      rev = curr;
-      curr = next;
-    }
-    head = rev;
+    Node next = curr.next;
+    curr.next = rev;
+    rev = curr;
+    curr = next;
   }
+  head = rev;
+}
 
   void insertBefore(int index, int value) {
 
@@ -78,9 +79,10 @@ public class XLinkedList {
 
   }
 
+
   void insertAfter(int index, int value) {
     Node newNode = new Node(value);
-      Node curr = head;
+    Node curr = head;
       while (index-- > 0){
         curr = curr.next;
       }
