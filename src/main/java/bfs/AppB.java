@@ -8,4 +8,3 @@ public class AppB {
         crawler.discoverWeb(rootUrl);
     }
 }
-
