@@ -82,5 +82,6 @@ public class Symmetric {
         String decryptedText = doAESDecryption(cipherText, symmetricKey, initializationVector);
 
         System.out.println("Sənin əsil mesajın : " + decryptedText);
+
     }
 }
